@@ -104,10 +104,10 @@
 	"buffers":
 	[
 		{
-			"file": "Event.cs",
+			"file": "/D/Documents/QualityCode/02_CodeFormatting/Homework/JavaScript-code.js",
 			"settings":
 			{
-				"buffer_size": 6577,
+				"buffer_size": 2248,
 				"line_ending": "Windows"
 			}
 		}
@@ -251,29 +251,28 @@
 			[
 				{
 					"buffer": 0,
-					"file": "Event.cs",
+					"file": "/D/Documents/QualityCode/02_CodeFormatting/Homework/JavaScript-code.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 6577,
+						"buffer_size": 2248,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								633,
-								633
+								158,
+								158
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/C#/C#.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 252.0,
+						"translation.y": 2268.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
