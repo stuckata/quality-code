@@ -1,0 +1,367 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"padd",
+				"padding-bottom"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"user",
+				"username"
+			],
+			[
+				"get",
+				"getUserData"
+			],
+			[
+				"filter",
+				"filter"
+			],
+			[
+				"to",
+				"town"
+			],
+			[
+				"$roo",
+				"$rootScope	AngularJS"
+			],
+			[
+				"$sc",
+				"$scope	AngularJS"
+			],
+			[
+				"filte",
+				"filter"
+			],
+			[
+				"ng-cl",
+				"ng-click	AngularJS"
+			],
+			[
+				"$loc",
+				"$location	AngularJS"
+			],
+			[
+				"$lo",
+				"$location	AngularJS(DI)"
+			],
+			[
+				"towns",
+				"townsData"
+			],
+			[
+				"ad",
+				"adId"
+			],
+			[
+				"log",
+				"logout"
+			],
+			[
+				"Ads",
+				"adsApp"
+			],
+			[
+				"fu",
+				"function"
+			],
+			[
+				"ng-re",
+				"ng-repeat	AngularJS"
+			],
+			[
+				"templ",
+				"templates"
+			],
+			[
+				"$route",
+				"$routeProvider	AngularJS"
+			],
+			[
+				"route",
+				"$routeProvider	AngularJS"
+			],
+			[
+				"sco",
+				"$scope	AngularJS"
+			],
+			[
+				"con",
+				"controller	AngularJS"
+			],
+			[
+				"rou",
+				"$routeProvider	AngularJS"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "Event.cs",
+			"settings":
+			{
+				"buffer_size": 6577,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 490.0,
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 648.0
+	},
+	"console":
+	{
+		"height": 162.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2deb499853c4371624f5a07e27c334aa' + 'bf8c4e67d14fb0525ba4f89698a6d7e1'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/D/Documents/QualityCode/02_CodeFormatting/02. Code-Formatting-Homework/Event.cs",
+		"/C/xampp/htdocs/ads-project/js/controllers/LoginCtrl.js",
+		"/C/xampp/htdocs/ads-project/js/controllers/TownsCtrl.js",
+		"/C/xampp/htdocs/ads-project/js/services/data/townsData.js",
+		"/C/xampp/htdocs/ads-project/js/services/data/categoriesData.js",
+		"/C/xampp/htdocs/ads-project/js/services/data/adsData.js",
+		"/C/xampp/htdocs/ads-project/js/services/data/userData.js",
+		"/C/xampp/htdocs/ads-project/templates/public/towns.html",
+		"/C/xampp/htdocs/ads-project/templates/public/right-sidebar.html",
+		"/C/xampp/htdocs/ads-project/styles/styles.css",
+		"/C/xampp/htdocs/ads-project/templates/public/public-ads.html",
+		"/C/xampp/htdocs/ads-project/templates/home.html",
+		"/C/xampp/htdocs/ads-project/index.html",
+		"/C/xampp/htdocs/ads-project/templates/user/publish-ad.html",
+		"/C/xampp/htdocs/ads-project/js/app.js",
+		"/C/xampp/htdocs/ads-project/js/services/filter.js",
+		"/C/xampp/htdocs/ads-project/js/controllers/RegisterCtrl.js",
+		"/C/xampp/htdocs/ads-project/js/controllers/PublishAdCtrl.js",
+		"/C/xampp/htdocs/ads-project/templates/register.html",
+		"/C/xampp/htdocs/ads-project/home-page.html",
+		"/C/xampp/htdocs/ads-project/js/controllers/CategoriesCtrl.js",
+		"/C/xampp/htdocs/ads-project/templates/public/logged-in-sidebar.html",
+		"/C/xampp/htdocs/ads-project/templates/user/my-ads.html",
+		"/C/xampp/htdocs/ads-project/templates/login.html",
+		"/C/xampp/htdocs/ads-project/templates/publish-ad.html",
+		"/C/xampp/htdocs/ads-project/js/controllers/HomeCtrl.js",
+		"/C/xampp/htdocs/ads-project/js/services/authentication.js",
+		"/C/xampp/htdocs/ads-project/templates/public/left-sidebar.html",
+		"/C/xampp/htdocs/ads-project/js/directives/categories.js",
+		"/C/xampp/htdocs/ads-project/js/controllers/LogoutCtrl.js",
+		"/C/xampp/htdocs/ads-project/templates/public/categories.html",
+		"/C/xampp/htdocs/ads-project/js/directives/towns.js",
+		"/C/xampp/htdocs/ads-project/js/controllers/PublicAdsCtrl.js",
+		"/C/xampp/htdocs/ads-project/template/pagination/pagination.html",
+		"/C/xampp/htdocs/ads-project/js/directives/logged-in-sidebar.js",
+		"/C/xampp/htdocs/ads-project/js/controllers/LoggedInSidebarCtrl.js",
+		"/C/xampp/htdocs/ads-project/bootstrap-themed-home-page.html",
+		"/C/xampp/htdocs/ads-project/js/directives/left-sidebar.js",
+		"/C/xampp/htdocs/ads-project/templates/directives/logged-in-sidebar.html",
+		"/C/xampp/htdocs/ads-project/js/directives/public-ads.js",
+		"/C/xampp/htdocs/ads-project/templates/public/user-ads.html",
+		"/C/Users/stu/AppData/Roaming/Sublime Text 3/Packages/AngularJS/AngularJS-js-completions.sublime-settings",
+		"/C/xampp/htdocs/ads-project/templates/public/ads.html",
+		"/C/xampp/htdocs/ads-project/templates/page-header/page-nav-header.html",
+		"/C/xampp/htdocs/ads-project/templates/left-sidebar/aside-login-register.html",
+		"/C/xampp/htdocs/ads-project/templates/body/ads-section.html",
+		"/C/xampp/htdocs/app.js",
+		"/C/xampp/htdocs/index.html",
+		"/C/xampp/htdocs/package.json",
+		"/C/Users/stu/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/C/Users/stu/AppData/Roaming/Sublime Text 3/Packages/User/Plain text.sublime-settings"
+	],
+	"find":
+	{
+		"height": 36.0
+	},
+	"find_in_files":
+	{
+		"height": 126.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"right-sidebar.html"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "Event.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6577,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								633,
+								633
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C#/C#.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 252.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 36.0
+	},
+	"input":
+	{
+		"height": 46.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.variable_get":
+	{
+		"height": 0.0
+	},
+	"project": "Event.sublime-project",
+	"replace":
+	{
+		"height": 68.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 334.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
