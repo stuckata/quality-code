@@ -4,7 +4,7 @@ import java.awt.Graphics;
 import java.util.LinkedList;
 
 public class Snake {
-	LinkedList<Point> snakeBody = new LinkedList<Point>();
+	private LinkedList<Point> snakeBody = new LinkedList<Point>();
 	private Color snakeColor;
 	private int velocityX;
 	private int velocityY;
@@ -32,23 +32,35 @@ public class Snake {
 		}
 	}
 	
+	public LinkedList<Point> getSnakeBody() {
+		return snakeBody;
+	}
+
+	public int getVelX() {
+		return velocityX;
+	}
+
+	public int getVelY() {
+		return velocityY;
+	}
+
 	public void moveSnake() {
 		Point newSnakePosition = new Point((snakeBody.get(0).getCoordinateX() + velocityX), (snakeBody.get(0).getCoordinateY() + velocityY));
 		
-		if (newSnakePosition.getCoordinateX() > Igr1t1.WIDTH - 20) {
-		 	Igr1t1.gameRunning = false;
+		if (newSnakePosition.getCoordinateX() > GameEngine.WIDTH - 20) {
+		 	GameEngine.gameRunning = false;
 		} else if (newSnakePosition.getCoordinateX() < 0) {
-			Igr1t1.gameRunning = false;
+			GameEngine.gameRunning = false;
 		} else if (newSnakePosition.getCoordinateY() < 0) {
-			Igr1t1.gameRunning = false;
-		} else if (newSnakePosition.getCoordinateY() > Igr1t1.HEIGHT - 20) {
-			Igr1t1.gameRunning = false;
-		} else if (Igr1t1.apple.daiTo4ka().equals(newSnakePosition)) {
-			snakeBody.add(Igr1t1.apple.daiTo4ka());
-			Igr1t1.apple = new Apple(this);
-			Igr1t1.score += 50;
+			GameEngine.gameRunning = false;
+		} else if (newSnakePosition.getCoordinateY() > GameEngine.HEIGHT - 20) {
+			GameEngine.gameRunning = false;
+		} else if (GameEngine.apple.getApplePosition().equals(newSnakePosition)) {
+			snakeBody.add(GameEngine.apple.getApplePosition());
+			GameEngine.apple = new Apple(this);
+			GameEngine.score += 50;
 		} else if (snakeBody.contains(newSnakePosition)) {
-			Igr1t1.gameRunning = false;
+			GameEngine.gameRunning = false;
 			System.out.println("You ate yourself");
 		}	
 		
@@ -58,19 +70,13 @@ public class Snake {
 		snakeBody.set(0, newSnakePosition);
 	}
 
-	public int getVelX() {
-		return velocityX;
-	}
-
 	public void setVelX(int velX) {
 		this.velocityX = velX;
-	}
-
-	public int getVelY() {
-		return velocityY;
 	}
 
 	public void setVelY(int velY) {
 		this.velocityY = velY;
 	}
+	
+	
 }
