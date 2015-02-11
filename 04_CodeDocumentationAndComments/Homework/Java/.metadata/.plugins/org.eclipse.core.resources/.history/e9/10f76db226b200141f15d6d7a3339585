@@ -1,0 +1,53 @@
+package com.snake.game;
+
+import java.awt.Color;
+import java.awt.Graphics;
+import java.util.Random;
+
+/**
+ * Class Apple. This class is used to generate and draw apples at random
+ * positions.
+ * 
+ * @author stu
+ */
+public class Apple {
+	public static final Random RANDOM_NUMBER_GENERATOR = new Random();
+	private Color appleColor;
+	private Point applePosition;
+
+	/**
+	 * The apple is constructed using the instance of snake in order to
+	 * calculate the correct position of the apple.
+	 * 
+	 * @param snake
+	 */
+	public Apple(Snake snake) {
+		applePosition = generateApple(snake);
+		appleColor = Color.RED;
+	}
+
+	/**
+	 * 
+	 * @param g
+	 *            - instance of {@link Graphics}
+	 */
+	public void drawApple(Graphics g) {
+		applePosition.draw(g, appleColor);
+	}
+
+	private Point generateApple(Snake snake) {
+		int x = RANDOM_NUMBER_GENERATOR.nextInt(30) * 20;
+		int y = RANDOM_NUMBER_GENERATOR.nextInt(30) * 20;
+		for (Point snakePoint : snake.getSnakeBody()) {
+			if (x == snakePoint.getCoordinateX()
+					|| y == snakePoint.getCoordinateY()) {
+				return generateApple(snake);
+			}
+		}
+		return new Point(x, y);
+	}
+
+	public Point getApplePosition() {
+		return applePosition;
+	}
+}

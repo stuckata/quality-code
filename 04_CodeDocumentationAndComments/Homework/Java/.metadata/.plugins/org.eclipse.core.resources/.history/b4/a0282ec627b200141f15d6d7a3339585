@@ -1,0 +1,42 @@
+package com.snake.game;
+
+import java.applet.Applet;
+import java.awt.Dimension;
+import java.awt.Graphics;
+
+/**
+ * The Java applet in which the game will be rendered.
+ * 
+ * @author stu
+ */
+@SuppressWarnings("serial")
+public class GameApplet extends Applet {
+	/**
+	 * {@link GameEngine}
+	 */
+	private GameEngine game;
+
+	/**
+	 * Initializes the applet
+	 */
+	@Override
+	public void init() {
+		game = new GameEngine();
+		game.setPreferredSize(new Dimension(800, 650));
+		game.setVisible(true);
+		game.setFocusable(true);
+		this.add(game);
+		this.setVisible(true);
+		this.setSize(new Dimension(800, 650));
+		this.game.addKeyListener(new KeyEventListener());
+	}
+
+	/**
+	 * Renders the applet with given size
+	 */
+	@Override
+	public void paint(Graphics g) {
+		this.setSize(new Dimension(800, 650));
+	}
+
+}

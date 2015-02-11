@@ -1,0 +1,94 @@
+package com.snake.game;
+
+import java.awt.Color;
+import java.awt.Graphics;
+
+/**
+ * The position of the game objects
+ * 
+ * @author stu
+ */
+public class Point {
+	/** The coordinates of the point */
+	private int coordinateX, coordinateY;
+	/** The height of the point */
+	private final int HEIGHT = 20;
+	/** The width of the point */
+	private final int WIDTH = 20;
+
+	/**
+	 * Constructs the position by given <b>X-</b> and <b>Y-</b> coordinates
+	 * 
+	 * @param x
+	 *            - coordinate by x
+	 * @param y
+	 *            - coordinate by y
+	 */
+	public Point(int x, int y) {
+		this.coordinateX = x;
+		this.coordinateY = y;
+	}
+
+	/**
+	 * Constructs the position by given position.
+	 * 
+	 * @param p
+	 *            - position
+	 */
+	public Point(Point p) {
+		this(p.coordinateX, p.coordinateY);
+	}
+
+	/**
+	 * Draws a rectangle at the current position
+	 * 
+	 * @param graphics
+	 * @param color
+	 */
+	public void draw(Graphics graphics, Color color) {
+		graphics.setColor(Color.BLACK);
+		graphics.fillRect(coordinateX, coordinateY, WIDTH, HEIGHT);
+		graphics.setColor(color);
+		graphics.fillRect(coordinateX + 1, coordinateY + 1, WIDTH - 2,
+				HEIGHT - 2);
+	}
+
+	/**
+	 * Compares the given object to the current object
+	 */
+	@Override
+	public boolean equals(Object object) {
+		if (object instanceof Point) {
+			Point point = (Point) object;
+			return (coordinateX == point.coordinateX)
+					&& (coordinateY == point.coordinateY);
+		}
+		return false;
+	}
+
+	public int getCoordinateX() {
+		return coordinateX;
+	}
+
+	public int getCoordinateY() {
+		return coordinateY;
+	}
+
+	public void setCoordinateX(int x) {
+		this.coordinateX = x;
+	}
+
+	public void setCoordinateY(int y) {
+		this.coordinateY = y;
+	}
+
+	/**
+	 * Returns the string representation of the object.
+	 * 
+	 * @see Object#toString()
+	 */
+	@Override
+	public String toString() {
+		return "[x=" + coordinateX + ",y=" + coordinateY + "]";
+	}
+}
