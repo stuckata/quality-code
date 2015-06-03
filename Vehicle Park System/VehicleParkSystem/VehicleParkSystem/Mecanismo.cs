@@ -1,101 +1,46 @@
-﻿using System;using Comandos;
+﻿using System;
+using Comandos;
 
-namespace VehicleParkSystem2 {
-                                class
-                                          Mecanismo 
-                                                     :
-                                                        IMecanismo
-                                                                     {
-                                                                         private
-                                                                                    exec
-                                                                                           ex;
-                                                                                                Mecanismo
-                                                                                                          (
-                                                                                                            exec ex
-                                                                                                                    )
-                                                                                                                        {
-                                                                                                                            this.ex 
-                                                                                                                                           =
-                                                                                                                                                        ex;
-                                                                                                                                                                                  }
+namespace VehicleParkSystem
+{
+    internal class Mecanismo : IMecanismo
+    {
+        private readonly exec ex;
 
-                                                public
-                                                            Mecanismo   
-                                                                                ()
-                                                                                   : 
-                                                                                     this
-                                                                                            (
-                                                                                                new exec
-                                                                                                                    ()
-                                                                                                                        )
-                                                                                                                         {
-                                                                                                                                                         }
+        private Mecanismo(exec ex)
+        {
+            this.ex = ex;
+        }
 
-                                                public 
-                                                        void
-                                                                Runrunrunrunrun
-                                                                    ()
-                                                                        {
-                                                                            while
-                                                                                    (
-                                                                                        true
-                                                                                                )
-                                                                                                    {
-                                                                                                        string 
-                                                                                                                commandLine 
-                                                                                                                            = 
-                                                                                                                                Console.
-                                                                                                                                            ReadLine();
-                                                                                                                                                        if (commandLine == null) break;
+        public Mecanismo() :
+                this(new exec())
+        {
+        }
 
-                                                                                                                                                                                        commandLine.Trim();
-                                                        if (
-                                                                string.IsNullOrEmpty
-                                                                                      (
-                                                                                        commandLine
-                                                                                                    )
-                                                                                                        )
-                                                                                                            
-                                                                                                                try
-                                                                                                                {
-                                                                                                                    var
-                                                                                                                        comando
-                                                                                                                                =
-                                                                                                                                    new
-                                                                                                                                         exec
-                                                                                                                                                            .
-                                                                                                                                                                comando
-                                                                                                                                                                        (
-                                                                                                                                                                            commandLine
-                                                                                                                                                                                        );
-                                                                                                                    string commandResult
-                                                                                                                                            =
-                                                                                                                                                
-                                                                                                                                                        ex
-                                                                                                                                                                        .
-                                                                                                                                                                            execução(comando);
-                                                                                                                    Console
-                                                                                                                            .
-                                                                                                                                WriteLine
-                                                                                                                                            (
-                                                                                                                                              commandResult
-                                                                                                                                                            );
-                                                                                                                }
-                                                    catch 
-                                                          (
-                                                            Exception 
-                                                                       ex
-                                                                          )
-                                                                            {
-                                                                                Console
-                                                                                        .
-                                                                                            WriteLine
-                                                                                                        (
-                                                                                                            ex
-                                                                                                                .
-                                                                                                                    Message);
-                                                                                                                                }
-                                                                                                                                    } 
-                                                                                                                                        }
-                                                                                                                                            }
-                                                                                                                                                 }
+        public void Runrunrunrunrun()
+        {
+            while (true)
+            {
+                var commandLine = Console.ReadLine();
+                if (commandLine == null) break;
+
+                commandLine.Trim();
+                if (string.IsNullOrEmpty(commandLine))
+                {
+                    try
+                    {
+                        var comando = new exec.comando(commandLine);
+                        var commandResult = ex.execução(comando);
+                        Console.WriteLine(commandResult);
+                    }
+                    catch
+                        (Exception ex)
+                    {
+                        Console.WriteLine(ex.Message);
+                    }
+                }
+
+            }
+        }
+    }
+}

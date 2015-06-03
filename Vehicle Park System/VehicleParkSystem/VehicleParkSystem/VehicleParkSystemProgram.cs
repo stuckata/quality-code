@@ -1,10 +1,10 @@
 ﻿namespace VehicleParkSystem
 {
-    using System;
     using System.Globalization;
     using System.Threading;
     using VehicleParkSystem2;
-    static class VehicleParkSystemProgram
+
+    public class VehicleParkSystemProgram
     {
         static void Main()
         {
