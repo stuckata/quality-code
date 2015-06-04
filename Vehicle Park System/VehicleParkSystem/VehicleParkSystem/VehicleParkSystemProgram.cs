@@ -10,7 +10,7 @@
         {
             Thread.CurrentThread.CurrentCulture = CultureInfo.InvariantCulture;
             var engine = new Mecanismo();
-            engine.Runrunrunrunrun();
+            engine.Run();
         }
     }
 }
