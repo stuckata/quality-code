@@ -17,7 +17,7 @@ namespace VehicleParkSystem
         {
         }
 
-        public void Runrunrunrunrun()
+        public void Run()
         {
             while (true)
             {

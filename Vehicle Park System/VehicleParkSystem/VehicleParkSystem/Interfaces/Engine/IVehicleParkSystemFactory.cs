@@ -2,7 +2,7 @@
 {
     using System;
 
-    public interface IVehicleParkFactory
+    public interface IVehicleParkSystemFactory
     {
         ICar InsertCar(ICar car, int sector, int placeNumber, DateTime startTime);
         

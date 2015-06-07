@@ -64,15 +64,22 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="comandos.cs" />
-    <Compile Include="Important.cs" />
+    <Compile Include="Engine\Factories\VehiclePark.cs" />
+    <Compile Include="Engine\Factories\VehicleParkSystemFactory.cs" />
+    <Compile Include="Engine\VehicleParkSystemEngine.cs" />
     <Compile Include="Interfaces\Engine\ICommand.cs" />
     <Compile Include="Interfaces\Engine\IUserInterface.cs" />
     <Compile Include="Interfaces\Engine\IVehiclePark.cs" />
+    <Compile Include="Interfaces\Engine\IVehicleParkSystemFactory.cs" />
     <Compile Include="Interfaces\Engine\IVehicleParkSystemEngine.cs" />
     <Compile Include="Interfaces\ICar.cs" />
     <Compile Include="Interfaces\IMotorbike.cs" />
     <Compile Include="Interfaces\ITruck.cs" />
     <Compile Include="Interfaces\IVehicle.cs" />
+    <Compile Include="Models\Car.cs" />
+    <Compile Include="Models\Motorbike.cs" />
+    <Compile Include="Models\Truck.cs" />
+    <Compile Include="Models\Vehicle.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="vp_vp.cs" />
     <Compile Include="Mecanismo.cs" />
@@ -82,10 +89,7 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Engine\Factories\" />
-    <Folder Include="Models\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.5">
       <Visible>False</Visible>
